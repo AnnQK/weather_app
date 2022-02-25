@@ -33,7 +33,7 @@ class UI {
 
 async function getCity(city) {
   const response = await fetch(
-    `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`
+    `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`
   );
 
   const data = await response.json();
@@ -44,7 +44,7 @@ async function displayCondition(preData) {
   UI.updateCity(preData);
   const cityCode = preData[0].Key;
   const response = await fetch(
-    `http://dataservice.accuweather.com/currentconditions/v1/${cityCode}?apikey=${key}`
+    `https://dataservice.accuweather.com/currentconditions/v1/${cityCode}?apikey=${key}`
   );
   const data = await response.json();
   UI.updateCondition(data);
