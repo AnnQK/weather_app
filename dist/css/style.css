@@ -1,1 +1,110 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: #fff4e6;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 1.125rem;
+  color: #495057;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 1rem;
+  background-color: #f1f3f5;
+  border-radius: 1rem;
+  -webkit-box-shadow: 9px 11px 15px 5px rgba(74, 78, 81, 0.2);
+          box-shadow: 9px 11px 15px 5px rgba(74, 78, 81, 0.2);
+  width: 50%;
+  max-width: 400px;
+}
+
+.container__form .location-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__form .location-form__container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container__form .location-form__input {
+  text-align: center;
+  padding: 1rem 0;
+  border: none;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.container__form .location-form .btn {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #dbe4ff;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.container__form .location-form .btn:hover {
+  color: #f8f9fa;
+  background-color: #4263eb;
+  -webkit-box-shadow: 8px 9px 12px -2px rgba(34, 60, 80, 0.2);
+          box-shadow: 8px 9px 12px -2px rgba(34, 60, 80, 0.2);
+}
+
+.container__info {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.container__info-image {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background: #f1f3f5 url("../../assets/img/logo/sunset.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.container__info-text {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
