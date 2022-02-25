@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fff4e6;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 1.125rem;
+  color: #495057;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+  background-color: #f1f3f5;
+  border-radius: 1rem;
+  box-shadow: 9px 11px 15px 5px rgba(74, 78, 81, 0.2);
+  width: 50%;
+  max-width: 400px;
+  //   height: 40rem;
+
+  &__form {
+    .location-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__container {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      &__input {
+        text-align: center;
+        padding: 1rem 0;
+        border: none;
+        margin: 1rem auto;
+        width: 100%;
+      }
+
+      .btn {
+        font-family: "Baloo Thambi 2", cursive;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #dbe4ff;
+        transition: all 500ms;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: #f8f9fa;
+          background-color: #4263eb;
+          box-shadow: 8px 9px 12px -2px rgba(34, 60, 80, 0.2);
+        }
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    margin: 2rem auto;
+    &-image {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      background: #f1f3f5 url("../../assets/img/logo/sunset.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+    }
+
+    &-text {
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
