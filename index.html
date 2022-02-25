@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script defer src="script/app.js"></script>
+    <script defer src="script/app.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">Weather app</h1>
+    </header>
+    <main class="container">
+      <section class="container__form">
+        <form id="location" class="location-form">
+          <div class="location-form__container">
+            <label for="city" class="">Enter your location</label>
+            <input type="text" id="city" class="location-form__input" />
+          </div>
+
+          <div class="location-form__btn">
+            <input type="submit" value="Search" class="btn" />
+          </div>
+        </form>
+      </section>
+
+      <section class="container__info">
+        <div class="container__info-image">
+          <img src="" alt="" srcset="" class="daytime-image" />
+        </div>
+        <div class="container__info-text">
+          <h3 class="container__info-city" id="city-info">City name</h3>
+
+          <h3 class="container__info-condition" id="condition-info">
+            Condition
+          </h3>
+
+          <h3 class="container__info-temp" id="temp-info">
+            Temperature <span id="metric"></span>
+          </h3>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
