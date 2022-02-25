@@ -41,10 +41,24 @@ async function getCity(city) {
 }
 
 async function displayCondition(preData) {
+  UI.updateCity(preData);
   const cityCode = preData[0].Key;
   const response = await fetch(
     `http://dataservice.accuweather.com/currentconditions/v1/${cityCode}?apikey=${key}`
   );
   const data = await response.json();
+  UI.updateCondition(data);
+  UI.updateTemp(data);
+  UI.updateDayTime(data);
   return data;
 }
+
+submitBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  // validation
+  if (cityInput.value == "") {
+    alert("Fill in city input");
+  }
+  getCity(cityInput.value).then((data) => displayCondition(data));
+});
